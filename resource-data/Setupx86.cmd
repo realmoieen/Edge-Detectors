@@ -1,0 +1,1 @@
+java -Djava.library.path="lib\x86" -jar ImageProcessing.jar
