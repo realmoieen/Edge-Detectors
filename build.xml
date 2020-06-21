@@ -72,9 +72,11 @@
     -->
     <target name="-post-jar">
         <copy todir="${dist.dir}">
-            <fileset dir="./resource-data"/>
+            <fileset dir="./resource-data">
+                <exclude name="*.png"/>
+            </fileset>
         </copy>
-        <zip destfile="ImageProcessing.zip"
+        <zip destfile="Edge-Detector-v1.0.zip"
             basedir="${dist.dir}"/>
     </target>
 </project>
